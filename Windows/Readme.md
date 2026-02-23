@@ -43,8 +43,9 @@ PS> .\SoftPhone.exe --sip-server calltrap.rpi --sip-user 1000 --sip-pwd "0000000
 PS> .\SoftPhone.exe --sip-server calltrap.rpi --sip-user 1000 --sip-pwd "00000000000" --callnum +33999999997 --mic --rec
 ```
 <br>
-Les appels sont enregistrés dans le répertoire Téléchargements https://github.com/siliciium/CallTrap/blob/c32f94e58b9ba534643d4004a4335c249f611ee7/Windows/Program.cs#L728
-de l'utilisateur.
+Les appels sont enregistrés dans le répertoire Téléchargements de l'utilisateur.
+https://github.com/siliciium/CallTrap/blob/c32f94e58b9ba534643d4004a4335c249f611ee7/Windows/Program.cs#L728
+
 
 <br>
 <br>
