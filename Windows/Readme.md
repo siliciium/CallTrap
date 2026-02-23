@@ -3,8 +3,7 @@
 <br>
 <br>
 
-
-## Il s'agit d'un softphone simple 📞 que vous pouvez utiliser pour communiquer avec Asterisk lors de vos démonstrations ou tests.
+## ⚡︎ Il s'agit d'un softphone simple que vous pouvez utiliser pour communiquer avec Asterisk lors de vos démonstrations ou tests.
 
 - Vous avez besoin de Visual Studio pour compiler le projet.
 - Cet outil utilise [SIPSorcery](https://github.com/sipsorcery-org/sipsorcery), qui est distribué sous cette [licence](https://github.com/sipsorcery-org/sipsorcery/blob/master/LICENSE.md).
@@ -12,8 +11,13 @@
 <br>
 <br>
 
+## ⚠︎ Attention :
+Le projet gère uniquement le système de quantification logarithmique : Pulse Code Modulation [A-Law](https://fr.wikipedia.org/wiki/Loi_A), part of the G.711 audio codec (PCMA)
 
-## Exemple d'utilisation :
+<br>
+<br>
+
+## ⚡︎ Exemple d'utilisation :
 
 * Simuler un appel avec le numéro `+33999999999` et utiliser un fichier audio local à la place du microphone
 ```
@@ -23,9 +27,13 @@ PS> .\SoftPhone.exe --sip-server calltrap.rpi --sip-user 1000 --sip-pwd "0000000
 ```
 PS> .\SoftPhone.exe --sip-server calltrap.rpi --sip-user 1000 --sip-pwd "00000000000" --callnum +33999999999 --mic
 ```
-* Simuler un appel avec le numéro `+33999999997` et utiliser le microphone et enregistrer l'appel dans un fichier .wav (mix entrant/sortant)
+* Simuler un appel avec le numéro `+33999999997` , utiliser le microphone et enregistrer l'appel dans un fichier .wav (mix entrant/sortant)
 ```
 PS> .\SoftPhone.exe --sip-server calltrap.rpi --sip-user 1000 --sip-pwd "00000000000" --callnum +33999999997 --mic --rec
 ```
-*(extension Asterisk appropriée nécessaire pour gérer les appels)*
+les fichiers sont enregistrés dans le répertoire [Téléchargements](https://github.com/siliciium/CallTrap/blob/c32f94e58b9ba534643d4004a4335c249f611ee7/Windows/Program.cs#L728) de l'utilisateur.
+
+<br>
+
+**(extension Asterisk appropriée nécessaire pour gérer les appels)*
 
