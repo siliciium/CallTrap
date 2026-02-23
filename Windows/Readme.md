@@ -1,4 +1,4 @@
-<img width="1279" height="548" alt="image" src="https://github.com/user-attachments/assets/52c1ef26-325e-45cd-ab19-1bfb9d91013c" />
+<img width="1515" height="524" alt="image" src="https://github.com/user-attachments/assets/7d1a47b5-f1ea-47ba-9379-232b7da1fed6" />
 
 <br>
 <br>
@@ -18,11 +18,6 @@ Le projet gère uniquement le système de quantification logarithmique : Pulse C
 <br>
 
 ## ⚡︎ Exemple d'utilisation :
-
-<img width="1515" height="524" alt="image" src="https://github.com/user-attachments/assets/7d1a47b5-f1ea-47ba-9379-232b7da1fed6" />
-
-<br>
-<br>
 
 * Simuler un appel avec le numéro `+33999999999` et utiliser un fichier audio local à la place du microphone
 ```
@@ -51,4 +46,10 @@ https://github.com/siliciium/CallTrap/blob/c32f94e58b9ba534643d4004a4335c249f611
 <br>
 
 **(extension Asterisk appropriée nécessaire pour gérer les appels)*
+
+<br>
+<br>
+
+# Demo :
+<img width="1279" height="548" alt="image" src="https://github.com/user-attachments/assets/52c1ef26-325e-45cd-ab19-1bfb9d91013c" />
 
