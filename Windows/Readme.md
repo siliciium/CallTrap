@@ -11,6 +11,11 @@
 <br>
 <br>
 
+<img width="975" height="600" alt="Sans-titre-2026-02-23-0652-github" src="https://github.com/user-attachments/assets/eade99ca-71c4-4fdd-a2d6-30396ba257fd" />
+
+<br>
+<br>
+
 ## ⚠︎ Attention :
 Le projet gère uniquement le système de quantification logarithmique : Pulse Code Modulation [A-Law](https://fr.wikipedia.org/wiki/Loi_A), part of the G.711 audio codec (PCMA)
 
