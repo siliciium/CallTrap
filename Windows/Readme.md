@@ -1,4 +1,4 @@
-<img width="1515" height="524" alt="image" src="https://github.com/user-attachments/assets/7d1a47b5-f1ea-47ba-9379-232b7da1fed6" />
+<img width="1279" height="548" alt="image" src="https://github.com/user-attachments/assets/52c1ef26-325e-45cd-ab19-1bfb9d91013c" />
 
 <br>
 <br>
@@ -18,6 +18,7 @@ Le projet gère uniquement le système de quantification logarithmique : Pulse C
 <br>
 
 ## ⚡︎ Exemple d'utilisation :
+<img width="1515" height="524" alt="image" src="https://github.com/user-attachments/assets/7d1a47b5-f1ea-47ba-9379-232b7da1fed6" />
 
 * Simuler un appel avec le numéro `+33999999999` et utiliser un fichier audio local à la place du microphone
 ```
