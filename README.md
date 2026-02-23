@@ -1,3 +1,6 @@
+
+<img width="1376" height="721" alt="Sans-titre-2026-02-23-0652" src="https://github.com/user-attachments/assets/5958e1ba-037a-4c38-a676-60a912a9b7e6" />
+
 # CallTrap
 Calltrap est une suite d'outils conçue pour le scénario suivant : Asterisk se connecte au profil HFP Bluetooth (mains libres) de votre smartphone et intercepte les appels pour les filtrer et les enregistrer. Cet outil a été créé pour journaliser et analyser les appels de démarchages abusifs en France.
 
