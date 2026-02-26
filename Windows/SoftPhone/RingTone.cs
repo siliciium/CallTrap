@@ -75,9 +75,9 @@ namespace SoftPhone
                             break;
 
                         case CountryTone.Australia:
-                            PlayTone(400, 400);
+                            PlayTone(425, 400);
                             SleepSafe(200);
-                            PlayTone(400, 400);
+                            PlayTone(425, 400);
                             SleepSafe(2000);
                             break;
                     }
