@@ -1,4 +1,4 @@
-<img width="1515" height="524" alt="image" src="https://raw.githubusercontent.com/siliciium/CallTrap/refs/heads/main/Windows/images/2.png" />
+<img width="1515" height="524" alt="image" src="https://raw.githubusercontent.com/siliciium/CallTrap/refs/heads/main/Windows/SoftPhone/Images/2.png" />
 
 <br>
 <br>
@@ -11,7 +11,7 @@
 <br>
 <br>
 
-<img width="975" height="600" alt="Sans-titre-2026-02-23-0652-github" src="https://raw.githubusercontent.com/siliciium/CallTrap/refs/heads/main/Windows/images/3.png" />
+<img width="975" height="600" alt="Sans-titre-2026-02-23-0652-github" src="https://raw.githubusercontent.com/siliciium/CallTrap/refs/heads/main/Windows/SoftPhone/Images/3.png" />
 
 <br>
 <br>
@@ -44,7 +44,7 @@ PS> .\SoftPhone.exe --sip-server calltrap.rpi --sip-user 1000 --sip-pwd "0000000
 ```
 <br>
 Les appels sont enregistrés dans le répertoire Téléchargements de l'utilisateur.
-https://github.com/siliciium/CallTrap/blob/c32f94e58b9ba534643d4004a4335c249f611ee7/Windows/Program.cs#L728
+https://github.com/siliciium/CallTrap/blob/c32f94e58b9ba534643d4004a4335c249f611ee7/Windows/SoftPhone/Program.cs#L728
 
 
 <br>
@@ -56,5 +56,5 @@ https://github.com/siliciium/CallTrap/blob/c32f94e58b9ba534643d4004a4335c249f611
 <br>
 
 # Demo :
-<img width="1279" height="548" alt="image" src="https://raw.githubusercontent.com/siliciium/CallTrap/refs/heads/main/Windows/images/4.png" />
+<img width="1279" height="548" alt="image" src="https://raw.githubusercontent.com/siliciium/CallTrap/refs/heads/main/Windows/SoftPhone/Images/4.png" />
 
