@@ -1,5 +1,5 @@
 <p align="center">
-<img width="1515" height="524" alt="image" src="https://github.com/siliciium/CallTrap/blob/f63c2ad7cfa53151736b1a6680d01e64060a3f75/Windows/PhoneSim/Images/_1.png" />
+<img width="1515" height="524" alt="image" src="https://github.com/siliciium/CallTrap/blob/main/Windows/PhoneSim/Images/_1.png" />
 </p>
 
 ## ⚡︎ Ce programme simule les profiles Bluetooth HFP (Hands Free Profile) et PBAP (PhoneBook Access Profile) d'un smartphone. 
@@ -11,10 +11,10 @@ Il peut être utilisé avec le module [chan_mobile](https://docs.asterisk.org/Co
 
 ## ⚡︎ Scénario
 <p align="center">
-<img alt="image" src="https://github.com/siliciium/CallTrap/blob/bc02df0b7f22f2ae98526489a9151358ae8d769d/Windows/PhoneSim/Images/_3.png" />
+<img alt="image" src="https://github.com/siliciium/CallTrap/blob/main/Windows/PhoneSim/Images/_3.png" />
 </p>
 
 ## ⚡︎ Exemple
 <p align="center">
-<img alt="image" src="https://github.com/siliciium/CallTrap/blob/bc02df0b7f22f2ae98526489a9151358ae8d769d/Windows/PhoneSim/Images/_2.png" />
+<img alt="image" src="https://github.com/siliciium/CallTrap/blob/main/Windows/PhoneSim/Images/_2.png" />
 </p>
