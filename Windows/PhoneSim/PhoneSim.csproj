@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid></ProjectGuid>
+    <ProjectGuid>f3b8c2f1-7d44-4c3e-9c2a-0c6b4e2f9d81</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>PhoneSim</RootNamespace>
     <AssemblyName>PhoneSim</AssemblyName>
