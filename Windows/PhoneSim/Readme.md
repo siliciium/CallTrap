@@ -83,9 +83,13 @@ Profile Descriptor List:
 [from-phonesim]
 ; Call without number
 exten => s,1,NoOp(Call without DID callerid:${CALLERID(num)} exten:${EXTEN})
+
+; If national number → convert to +33…
+same => n,Set(CALLERID(num)=${IF($["${CALLERID(num):0:1}"="0"]?+33${CALLERID(num):1}:${CALLERID(num)})})
+
+same => n,GotoIf($[ "${CALLERID(num)}" =~ "^\+339" ]?national_fr,1)
+same => n,GotoIf($[ "${CALLERID(num)}" =~ "^\+33[67]" ]?mobile_fr,1)
 same => n,GotoIf($[ "${CALLERID(num)}" =~ "^\+33" ]?international_fr,1)
-same => n,GotoIf($[ "${CALLERID(num)}" =~ "^09" ]?national_fr,1)
-same => n,GotoIf($[ "${CALLERID(num)}" =~ "^0[76]" ]?mobile_fr,1)
 same => n,Goto(invalid,1)
 
 exten => international_fr,1,NoOp(International call FR)
