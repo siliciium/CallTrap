@@ -29,7 +29,7 @@ Il peut être utilisé avec le module [chan_mobile](https://docs.asterisk.org/Co
 </p>
 
 
-## ⚡︎ Asterisk `chan_mobile.conf` exemple:
+## ⚡︎ Asterisk `chan_mobile.conf` exemple :
 ```
 [general]
 interval=30
@@ -78,7 +78,7 @@ Profile Descriptor List:
     Version: 0x0107
 ```
 
-## ⚡︎ Asterisk `extensions.conf` exemple:
+## ⚡︎ Asterisk `extensions.conf` exemple :
 ```
 [from-phonesim]
 ; Call without number
