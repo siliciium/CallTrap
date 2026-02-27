@@ -47,16 +47,12 @@ adapter=raspberrypi
 ```
 Explications `[adapter]`:
 ```
-...
 address=XX:XX:XX:XX:XX:XX  🡐 RaspberryPi Bluetooth adapter address
-...
 ```
 Explications `[phone]`:
 ```
-...
 address=11:11:22:22:33:11  🡐 Windows Bluetooth adapter address
 port=4                     🡐 Windows PhoneSim HFP port
-...
 ```
 Vous pouvez trouver les informations dans la barre de titre de PhoneSim :
 <p align="center">
