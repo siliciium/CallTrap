@@ -87,17 +87,30 @@ exten => s,1,NoOp(Call without DID callerid:${CALLERID(num)} exten:${EXTEN})
 ; If national number → convert to +33…
 same => n,Set(CALLERID(num)=${IF($["${CALLERID(num):0:1}"="0"]?+33${CALLERID(num):1}:${CALLERID(num)})})
 
-same => n,GotoIf($[ "${CALLERID(num)}" =~ "^\+339" ]?national_fr,1)
+
+; +331-5 → geographical, SVA, etc.
+same => n,GotoIf($[ "${CALLERID(num)}" =~ "^\+33[1-5]" ]?geograpical_fr,1)
+
+; +336 / +337 → mobiles
 same => n,GotoIf($[ "${CALLERID(num)}" =~ "^\+33[67]" ]?mobile_fr,1)
-same => n,GotoIf($[ "${CALLERID(num)}" =~ "^\+33" ]?international_fr,1)
+
+; +338 → special freecall
+same => n,GotoIf($[ "${CALLERID(num)}" =~ "^\+3380[0-5]" ]?special_free_fr,1)
+
+; +338 → spacial standardized
+same => n,GotoIf($[ "${CALLERID(num)}" =~ "^\+3380[6-9]" ]?special_standardized_fr,1)
+
+; +338 → spacial surcharge
+same => n,GotoIf($[ "${CALLERID(num)}" =~ "^\+3380[6-9]" ]?special_surcharge_fr,1)
+
+; +339 → national (VoIP / spéciaux)
+same => n,GotoIf($[ "${CALLERID(num)}" =~ "^\+339" ]?national_fr,1)
+
+; others
 same => n,Goto(invalid,1)
 
-exten => international_fr,1,NoOp(International call FR)
-same => n,Answer()
-same => n,Playback(hello-world)
-same => n,Hangup()
 
-exten => national_fr,1,NoOp(National call FR)
+exten => geograpical_fr,1,NoOp(Geograpical call FR)
 same => n,Answer()
 same => n,Playback(hello-world)
 same => n,Hangup()
@@ -106,6 +119,21 @@ exten => mobile_fr,1,NoOp(Mobile call FR)
 same => n,Answer()
 same => n,Playback(hello-world)
 same => n,Hangup()
+
+exten => special_free_fr,1,NoOp(Special (free) call FR)
+same => n,Hangup()
+
+exten => special_standardized_fr,1,NoOp(Special (standardized) call FR)
+same => n,Hangup()
+
+exten => special_surcharge_fr,1,NoOp(Special (surcharge) call FR)
+same => n,Hangup()
+
+exten => national_fr,1,NoOp(National call FR)
+same => n,Answer()
+same => n,Playback(hello-world)
+same => n,Hangup()
+
 
 exten => invalid,1,NoOp(Non-managed call)
 same => n,Hangup()
