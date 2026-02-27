@@ -8,6 +8,12 @@ Il peut être utilisé avec le module [chan_mobile](https://docs.asterisk.org/Co
 ## ⚡︎ Requis
 - Vous avez besoin de Visual Studio pour compiler le projet.
 - Vous devez aussi installer le SDK [Windows SDK for Windows 10 2004 (10.0.19041.0)](https://go.microsoft.com/fwlink/?linkid=2311805) pour `Windows.winmd`
+> Type
+- `<TargetFrameworkVersion>v4.8.1</TargetFrameworkVersion>`
+> Références
+- `..\..\..\..\..\Windows\Microsoft.NET\Framework64\v4.0.30319\System.Runtime.WindowsRuntime.dll`
+- `..\..\..\..\..\Program Files (x86)\Windows Kits\10\UnionMetadata\10.0.19041.0\Windows.winmd`
+
 
 ## ⚡︎ Scénario
 <p align="center">
