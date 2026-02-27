@@ -245,9 +245,9 @@ namespace PhoneSim
 
         private static void setCustomAttributes(RfcommServiceProvider provider)
         {
-            // --- SDP complet d’un téléphone HFP ---
+            // --- Full SDP of an HFP phone ---
 
-            // Nom du service
+            // Name of the service
             AddSdpString(provider, 0x0100, "Handsfree Audio Gateway");
 
             // Description
