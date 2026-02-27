@@ -77,3 +77,27 @@ Profile Descriptor List:
   "Handsfree" (0x111e)
     Version: 0x0107
 ```
+
+## ⚡︎ Asterisk `extensions.conf` exemple:
+```
+[from-phonesim]
+; Call without number
+exten => s,1,NoOp(Call without DID callerid:${CALLERID(num)} exten:${EXTEN})
+same => n,GotoIf($[ "${CALLERID(num)}" =~ "^\+33" ]?international_fr,1)
+same => n,GotoIf($[ "${CALLERID(num)}" =~ "^0[976]" ]?national_fr,1)
+same => n,Goto(invalid,1)
+
+exten => international_fr,1,NoOp(International call FR)
+same => n,Answer()
+same => n,Playback(hello-world)
+same => n,Hangup()
+
+exten => national_fr,1,NoOp(National call FR)
+same => n,Answer()
+same => n,Playback(hello-world)
+same => n,Hangup()
+
+exten => invalid,1,NoOp(Non-managed call)
+same => n,Playback(invalid)
+same => n,Hangup()
+```
