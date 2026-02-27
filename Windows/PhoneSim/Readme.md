@@ -98,6 +98,5 @@ same => n,Playback(hello-world)
 same => n,Hangup()
 
 exten => invalid,1,NoOp(Non-managed call)
-same => n,Playback(invalid)
 same => n,Hangup()
 ```
