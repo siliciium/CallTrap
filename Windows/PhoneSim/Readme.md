@@ -5,6 +5,9 @@
 ## ⚡︎ Ce programme simule les profiles Bluetooth HFP (Hands Free Profile) et PBAP (PhoneBook Access Profile) d'un smartphone. 
 Il peut être utilisé avec le module [chan_mobile](https://docs.asterisk.org/Configuration/Channel-Drivers/Mobile-Channel/Mobile-Channel-Concepts/) Asterisk pour tester une extension et/ou avec python-dbus pour l'accès à l'annuaire téléphonique. Voir ici pour [PBAP-PCE](https://github.com/siliciium/Python_Public/blob/main/Bluetooth/PBAP_PCE.py)
 
+**Ne prend pas en charge de canal SCO (Synchronous Connection-Oriented) utilisé pour transporter de l’audio voix (CVSD, mSBC, etc.)*
+
+
 ## ⚡︎ Requis
 - Vous avez besoin de Visual Studio pour compiler le projet.
 - Vous avez besoin de [Windows SDK for Windows 10 2004 (10.0.19041.0)](https://go.microsoft.com/fwlink/?linkid=2311805) pour `Windows.winmd`
