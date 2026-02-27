@@ -1,0 +1,14 @@
+<Window x:Class="PhoneSim.DarkMessageBox"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PhoneSim"
+        mc:Ignorable="d"
+        Title="DarkMessageBox" Height="450" Width="800" Background="#1E1E1E" Foreground="White" WindowStyle="ToolWindow" ResizeMode="NoResize" SizeToContent="WidthAndHeight" WindowStartupLocation="CenterScreen" FontFamily="Cascadia Mono" FontSize="14">
+    <Grid>
+        <StackPanel Margin="20">
+            <TextBlock x:Name="TextBlockMessage" TextWrapping="Wrap" />
+        </StackPanel>
+    </Grid>
+</Window>
