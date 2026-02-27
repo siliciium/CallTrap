@@ -101,7 +101,7 @@ same => n,GotoIf($[ "${CALLERID(num)}" =~ "^\+3380[0-5]" ]?special_free_fr,1)
 same => n,GotoIf($[ "${CALLERID(num)}" =~ "^\+3380[6-9]" ]?special_standardized_fr,1)
 
 ; +338 → spacial surcharge
-same => n,GotoIf($[ "${CALLERID(num)}" =~ "^\+3380[6-9]" ]?special_surcharge_fr,1)
+same => n,GotoIf($[ "${CALLERID(num)}" =~ "^\+338[1-9]0-9]" ]?special_surcharge_fr,1)
 
 ; +339 → national (VoIP / spéciaux)
 same => n,GotoIf($[ "${CALLERID(num)}" =~ "^\+339" ]?national_fr,1)
