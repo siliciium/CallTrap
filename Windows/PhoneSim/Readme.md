@@ -27,3 +27,38 @@ Il peut être utilisé avec le module [chan_mobile](https://docs.asterisk.org/Co
 <p align="center">
 <img alt="image" src="https://github.com/siliciium/CallTrap/blob/main/Windows/PhoneSim/Images/_2.png" />
 </p>
+
+
+## ⚡︎ Asterisk `chan_mobile.conf` exemple:
+```
+[general]
+interval=30
+
+[adapter]
+;USB (hci1, raspberrypi)
+id=raspberrypi
+address=XX:XX:XX:XX:XX:XX
+
+[phone]
+address=11:11:22:22:33:11
+port=4
+context=from-phonesim
+adapter=raspberrypi
+```
+Explications `[adapter]`:
+```
+...
+address=XX:XX:XX:XX:XX:XX  🡐 RaspberryPi Bluetooth adapter address
+...
+```
+Explications `[phone]`:
+```
+...
+address=11:11:22:22:33:11  🡐 Windows Bluetooth adapter address
+port=4                     🡐 Windows PhoneSim HFP port
+...
+```
+Vous pouvez trouver les informations dans la barre de titre de PhoneSim :
+<p align="center">
+<img alt="image" src="https://github.com/siliciium/CallTrap/blob/main/Windows/PhoneSim/Images/_4.png" />
+</p>
