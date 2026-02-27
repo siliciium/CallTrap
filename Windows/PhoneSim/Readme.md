@@ -62,6 +62,18 @@ port=4                     🡐 Windows PhoneSim HFP port
 - Ou depuis Linux / RaspberryPi
 
 `user@raspberrypi:~$ sdptool browse 11:11:22:22:33:11`
-<p align="center">
-<img alt="image" src="https://github.com/siliciium/CallTrap/blob/main/Windows/PhoneSim/Images/_5.png" />
-</p>
+```
+Service Name: Handsfree Audio Gateway
+Service Description: Simulated Hands-Free Phone
+Service Provider: PhoneSim
+Service RecHandle: 0x10181
+Service Class ID List:
+  UUID 128: 04a36a5f-84d5-4ef0-9272-1586994685b1
+Protocol Descriptor List:
+  "L2CAP" (0x0100)
+  "RFCOMM" (0x0003)
+    Channel: 4             🡐 Windows PhoneSim HFP port
+Profile Descriptor List:
+  "Handsfree" (0x111e)
+    Version: 0x0107
+```
