@@ -94,13 +94,13 @@ namespace PhoneSim
 
         private static Dictionary<string, CindIndicator> CIND = new Dictionary<string, CindIndicator>()
         {
-            { "call",      new CindIndicator("call",      1, 0, 1, 0) },
-            { "callsetup", new CindIndicator("callsetup", 2, 0, 3, 1) },
-            { "service",   new CindIndicator("service",   3, 0, 1, 1) },
-            { "signal",    new CindIndicator("signal",    4, 0, 5, 1) },
-            { "roam",      new CindIndicator("roam",      5, 0, 1, 0) },
-            { "battchg",   new CindIndicator("battchg",   6, 0, 5, 1) },
-            { "callheld",  new CindIndicator("callheld",  7, 0, 2, 1) }
+            { "call",      new CindIndicator("call",      1, 0, 1, 0) }, // (0 = pas d’appel actif, 1 = appel en cours)
+            { "callsetup", new CindIndicator("callsetup", 2, 0, 3, 1) }, // (0 = aucun, 1 = entrant, 2 = sortant, 3 = alerting)
+            { "service",   new CindIndicator("service",   3, 0, 1, 1) }, // (0 = pas de réseau, 1 = réseau OK)
+            { "signal",    new CindIndicator("signal",    4, 0, 5, 1) }, // signal (0–5)
+            { "roam",      new CindIndicator("roam",      5, 0, 1, 0) }, // (0 = pas en roaming, 1 = roaming)
+            { "battchg",   new CindIndicator("battchg",   6, 0, 5, 1) }, // battchg (0–5)
+            { "callheld",  new CindIndicator("callheld",  7, 0, 2, 1) }  // (0 = aucun, 1 = mis en attente, 2 = swap)
         };
         private static int BRSF = 3943;
         private static bool eventsEnabled = false;
@@ -424,7 +424,7 @@ namespace PhoneSim
             }
             else if (line.StartsWith("AT+CIND?"))
             {
-                responses.Add(AT($"+CIND: 0,0,0,0,0,{Rand_battchg()},0"));
+                responses.Add(AT($"+CIND: 0,0,1,1,0,{Rand_battchg()},0"));
                 responses.Add(AT_OK);
             }
             // Call MEr Reporting
