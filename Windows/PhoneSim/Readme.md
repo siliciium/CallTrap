@@ -45,16 +45,23 @@ port=4
 context=from-phonesim
 adapter=raspberrypi
 ```
-Explications `[adapter]`:
+- Explications `[adapter]`:
 ```
 address=XX:XX:XX:XX:XX:XX  🡐 RaspberryPi Bluetooth adapter address
 ```
-Explications `[phone]`:
+- Explications `[phone]`:
 ```
 address=11:11:22:22:33:11  🡐 Windows Bluetooth adapter address
 port=4                     🡐 Windows PhoneSim HFP port
 ```
-Vous pouvez trouver les informations dans la barre de titre de PhoneSim :
+- Vous pouvez trouver les informations dans la barre de titre de PhoneSim :
 <p align="center">
 <img alt="image" src="https://github.com/siliciium/CallTrap/blob/main/Windows/PhoneSim/Images/_4.png" />
+</p>
+
+- Ou depuis Linux / RaspberryPi
+
+`user@raspberrypi:~$ sdptool browse 11:11:22:22:33:11`
+<p align="center">
+<img alt="image" src="https://github.com/siliciium/CallTrap/blob/main/Windows/PhoneSim/Images/_5.png" />
 </p>
