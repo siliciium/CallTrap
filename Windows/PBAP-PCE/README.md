@@ -43,7 +43,7 @@
   - `Phonebook` : ich et/ou mch seulement implémentés.
   - `Months` : Filtre des appels depuis le nombre de mois spécifiés.
 - **Boutons**
-  - de gauche à droite: `Exporter`, `Plage de temps / Appels` (switch) , `Analyser`
+  - De gauche à droite: `Exporter`, `Plage de temps / Appels` (switch) , `Analyser`
 
 
 - **Filtrer les appels par attributaire** pour observer le delta entre les appels (en sélectionnant un appel) et voir le nombre d'appels total et le nombre maximum d'appels par jour provenant du même attributaire.
