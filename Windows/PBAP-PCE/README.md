@@ -20,7 +20,7 @@
 - `..\..\..\..\..\Program Files (x86)\Windows Kits\10\UnionMetadata\10.0.19041.0\Windows.winmd`
 
 # ⚡︎ Utilisation
-- L'appareil Bluetooth pour lequel vous souhaitez obtenir les informations (probablement un smartphone) doit être appairés avant de pouvoir procéder à une analyse. Lors de l'appairage vous devez vous assurez de cocher `l'autorisation Bluetooth liée au partage du carnet d’adresses` sur l'appareil distant. Le nom exact varie selon les marques, mais les systèmes Android utilisent des formulations proches.
+- L'appareil Bluetooth pour lequel vous souhaitez obtenir les informations (probablement un smartphone) doit être appairé avant de pouvoir procéder à une analyse. Lors de l'appairage vous devez vous assurez de cocher `l'autorisation Bluetooth liée au partage du carnet d’adresses` sur l'appareil distant. Le nom exact varie selon les marques, mais les systèmes Android utilisent des formulations proches.
 
 - **Les libellés les plus courants :**
   - Accès au carnet d’adresses
