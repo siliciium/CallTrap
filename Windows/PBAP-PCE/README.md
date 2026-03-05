@@ -46,7 +46,7 @@
   - De gauche à droite: `Exporter`, `Plage de temps / Appels` (switch) , `Analyser`
 
 
-- **Filtrer les appels par attributaire** pour observer le delta entre les appels (en sélectionnant un appel) et voir le nombre d'appels total et le nombre maximum d'appels par jour provenant du même attributaire.
+- **Filtrer les appels par attributaire** pour observer le delta entre les appels (en sélectionnant un appel) et voir le nombre d'appels total et le nombre maximum d'appels par jour provenant du même attributaire. *Le delta est par attributaire*
 <p align="center">
 <img alt="image" width="700" src="https://github.com/siliciium/CallTrap/blob/main/Windows/PBAP-PCE/Images/_3.png" />
 </p>
