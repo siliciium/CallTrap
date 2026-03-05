@@ -37,12 +37,21 @@
       3. Appuyer sur l’icône ⚙️ ou Options du périphérique déjà appairé
       4. Activer l’option liée au partage des contacts / carnet d’adresses
 
-- Filtrer les appels par attributaire pour observer le delta entre les appels (en sélectionnant un appel) et voir le nombre d'appels total et le nombre maximum d'appels par jour provenant du même attributaire.
+- **Champs**
+  - `Client Bluetooth Name` : Le nom Bluetooth de l'appareil à analyser.
+  - `Location`  : Telecom, SIM1 seulement implémentés.
+  - `Phonebook` : ich et/ou mch seulement implémentés.
+  - `Months` : Filtre des appels depuis le nombre de mois spécifiés.
+- **Boutons**
+  - de gauche à droite: `Exporter`, `Plage de temps / Appels` (switch) , `Analyser`
+
+
+- **Filtrer les appels par attributaire** pour observer le delta entre les appels (en sélectionnant un appel) et voir le nombre d'appels total et le nombre maximum d'appels par jour provenant du même attributaire.
 <p align="center">
 <img alt="image" width="700" src="https://github.com/siliciium/CallTrap/blob/main/Windows/PBAP-PCE/Images/_3.png" />
 </p>
 
-- Filtrer les appels et obtenir le nombre d'appels qui ont eu lieu dans une fenêtre de temps
+- **Filtrer les appels et obtenir le nombre d'appels** qui ont eu lieu dans une fenêtre de temps
 <p align="center">
 <img alt="image" width="700" src="https://github.com/siliciium/CallTrap/blob/main/Windows/PBAP-PCE/Images/_4.png" />
 </p>
